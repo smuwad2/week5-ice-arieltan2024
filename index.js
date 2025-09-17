@@ -147,7 +147,7 @@ app.get('/data', (req, res) => {
   const type = req.query.type;
   const limit = parseInt(req.query.limit) || 1;
 
-  let dataset = [];
+  let dataset = []; 
 
   if (type === 'customers') {
     dataset = customers.slice(0, limit);
